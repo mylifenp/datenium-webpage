@@ -8,11 +8,10 @@ const HeroSection = () => {
         <div className="flex flex-col">
           <div className="text-left p-2 ">
             <h1 className="text-2xl md:text-xl lg:text-2xl xl:text-6xl font-bold mb-6">
-              Empowering Your Business to the Next Level Through Strategic Technology Solutions
+            NavyaNirmata.io: Pioneering Modern Solutions with Creativity and Precision.
             </h1>
             <p className="text-base md:text-md lg:text-lg xl:text-xl ">
-              Welcome to DigiWeb Solutions, your trusted partner in navigating the ever-evolving landscape of information technology. We are committed to delivering innovative solutions that propel your business forward, leveraging the power of technology to drive efficiency, productivity, and growth.
-            </p>
+            NavyaNirmata.io is your dedicated partner for comprehensive development solutions. With a focus on excellence and innovation, we bring together skilled development teams tailored to meet your unique needs. Whether you're embarking on a software project, building a digital presence, or enhancing your technological capabilities, NavyaNirmata.io delivers top-notch expertise. Our commitment to quality and efficiency ensures that your vision transforms into reality. Explore the limitless possibilities with NavyaNirmata.io – where development meets ingenuity for all your requirements.</p>
             <div className="mt-10 flex items-center justify-center md:justify-start gap-x-6">
               <a href="#" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
               <a href="#" className="text-sm md:text-base lg:text-lg xl:text-xl font-semibold leading-6">Learn more <span aria-hidden="true">→</span></a>
@@ -21,8 +20,10 @@ const HeroSection = () => {
         </div>
 
         {/* Image (conditionally rendered based on screen size) */}
-        <div className="hidden md:flex ">
-          <Image src='/Featured_Img.jpg' alt="Hero Image" width={600} height={100} />
+        <div className="flex items-center justify-center">
+          <Image src='/bg-featured_img.png'
+        alt="Screenshots of the dashboard project showing desktop version" width={1000}
+        height={760} />
         </div>
       </div>
     </section>

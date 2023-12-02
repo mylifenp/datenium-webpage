@@ -16,7 +16,12 @@ interface Services {
     webDevelopment: boolean;
     softwareReengineering: boolean;
     mobileDevelopment: boolean;
-    // Add other services as needed
+    qualityAssurance: boolean;
+    ITConsulting: boolean;
+    staffingRecruitment: boolean;
+    digitalProductDesign: boolean;
+    customSoftwareDevelopment: boolean;
+    others: boolean;
 }
 
 const Contacts: React.FC = () => {
@@ -33,6 +38,12 @@ const Contacts: React.FC = () => {
         webDevelopment: false,
         softwareReengineering: false,
         mobileDevelopment: false,
+        qualityAssurance: false,
+        ITConsulting: false,
+        staffingRecruitment: false,
+        digitalProductDesign: false,
+        customSoftwareDevelopment: false,
+        others: false
         // Add other services as needed
     });
 
@@ -66,7 +77,7 @@ const Contacts: React.FC = () => {
                     <div className="flex flex-col">
                         <div className="text-left p-2 ">
                             <h1 className="text-2xl md:text-xl lg:text-2xl xl:text-6xl font-bold mb-6">
-                                What would you like us to do?. We're always there to help you in growing your business.</h1>
+                                We would love to serve you with our development skills tailored to the high-quality standards of your company.</h1>
                             <p className="text-base">
                                 Achieve all your goals and get long-term value for your business with professional services from our highly qualified experienced developers and designers.</p>
                         </div>
@@ -134,40 +145,40 @@ const Contacts: React.FC = () => {
 
                         <Checkbox
                             label="Mobile Development"
-                            isChecked={services.softwareReengineering}
-                            onChange={() => handleCheckboxChange('softwareReengineering')}
+                            isChecked={services.mobileDevelopment}
+                            onChange={() => handleCheckboxChange('mobileDevelopment')}
                         />
 
                         <Checkbox
                             label="Quality Assurance"
-                            isChecked={services.softwareReengineering}
-                            onChange={() => handleCheckboxChange('softwareReengineering')}
+                            isChecked={services.qualityAssurance}
+                            onChange={() => handleCheckboxChange('qualityAssurance')}
                         />
 
                         <Checkbox
                             label="IT Consulting & Digital Advisory"
-                            isChecked={services.softwareReengineering}
-                            onChange={() => handleCheckboxChange('softwareReengineering')}
+                            isChecked={services.ITConsulting}
+                            onChange={() => handleCheckboxChange('ITConsulting')}
                         />
                         <Checkbox
                             label="IT Staffing & Recruitmente"
-                            isChecked={services.softwareReengineering}
-                            onChange={() => handleCheckboxChange('softwareReengineering')}
+                            isChecked={services.staffingRecruitment}
+                            onChange={() => handleCheckboxChange('staffingRecruitment')}
                         />
                         <Checkbox
                             label="Digital Product Design"
-                            isChecked={services.softwareReengineering}
-                            onChange={() => handleCheckboxChange('softwareReengineering')}
+                            isChecked={services.digitalProductDesign}
+                            onChange={() => handleCheckboxChange('digitalProductDesign')}
                         />
                         <Checkbox
                             label="Custom Software Development"
-                            isChecked={services.softwareReengineering}
-                            onChange={() => handleCheckboxChange('softwareReengineering')}
+                            isChecked={services.customSoftwareDevelopment}
+                            onChange={() => handleCheckboxChange('customSoftwareDevelopment')}
                         />
                         <Checkbox
                             label="Others"
-                            isChecked={services.softwareReengineering}
-                            onChange={() => handleCheckboxChange('softwareReengineering')}
+                            isChecked={services.others}
+                            onChange={() => handleCheckboxChange('others')}
                         />
                         <div className="flex justify-between">
                             <button

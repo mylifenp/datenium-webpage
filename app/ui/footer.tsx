@@ -11,13 +11,12 @@ const Footer = () => {
         <div className="md:flex md:justify-between text-white">
           <div className="mb-6 md:mb-0 md:w-1/3">
             <a href="/" className="flex items-center ">
-              {/* Uncomment the line below and replace the src attribute with your logo URL */}
-              {/* <img src="your-logo-url" className="h-8 me-3" alt="Company Logo" /> */}
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DigiWeb Technology</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">NavyaNirmata.io</span>
             </a>
+            <span className="self-center whitespace-nowrap dark:text-white">Pioneering Modern Solutions with Creativity and Innovations</span>
             <p className='flex items-center my-3'>
-              DigiWeb Technology is a software development company that partners with large enterprises and innovative startups to bring ideas of any scale to life. Our expert services include building MVPs, developing software products from scratch, and scaling teams. We have a flexible pipeline that adapts to each client's unique needs, delivering results that empower you to achieve your business goals.
-            </p>
+              Our commitment to excellence, coupled with a passion for innovation, ensures that your projects are not just delivered but crafted with precision and creativity. 
+              Embrace a journey of collaboration and growth as NavyaNirmata.io becomes your go-to partner for all-encompassing development solutions.</p>
           </div>
 
           <div className=" grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
