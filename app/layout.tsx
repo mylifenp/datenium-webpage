@@ -3,14 +3,14 @@ import '../styles/globals.css';
 import Navbar from './ui/navbar';
 import Footer from './ui/footer';
 import Head from 'next/head';
-import { Inter, Lusitana } from 'next/font/google';
+// import { Inter} from 'next/font/google';
  
  
-export const lusitana = Lusitana({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-});
-export const inter = Inter({ subsets: ['latin'] });
+// export const lusitana = Lusitana({
+//   weight: ['400', '700'],
+//   subsets: ['latin'],
+// });
+// export const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'NavyaNirmata.io - Creator of the Modern and Innovative Solutions',
@@ -28,7 +28,7 @@ export default function RootLayout({
         <title></title>
         <meta name="description" content="Development Teams for all your need." />
       </Head>
-      <body className={`${inter.className} antialiased `}>
+      <body >
         <Navbar />
         <div>
           {children}
