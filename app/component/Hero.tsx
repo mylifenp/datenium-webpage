@@ -21,17 +21,13 @@ const HeroSection = () => {
 
         {/* Image (conditionally rendered based on screen size) */}
         <div className="flex items-center justify-center relative">
-          {/* <img
-            src='/bg-featured_img.png'
-            alt="Screenshots of the dashboard project showing desktop version"
-            className="md:absolute top-0 left-0 w-full h-full"
-            property='true'
-          /> */}
-          <Image src='/bg-featured_img.png'
+          <Image src='/web_development_banner.svg'
             className="top-0 left-0 w-full h-full"
-            property='true'
-            alt="Screenshots of the dashboard project showing desktop version" width={1000}
-            height={760} />
+            priority
+            alt="Screenshots of the dashboard project showing desktop version" 
+            width={1000}
+            height={760} 
+            />
         </div>
       </div>
     </section>
