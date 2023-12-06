@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const remotePlatform = {
     "jobPlatforms": [
@@ -151,11 +152,10 @@ const Companies = () => {
         <h1 className="text-3xl font-semibold mb-4">Featured Companies</h1>
       {remotePlatform.jobPlatforms.map((company, index) => (
         <div key={index} className="bg-white p-4 rounded-md shadow-md">
-          <img
-            src={company.image}
-            alt={`${company.name} Logo`}
-            className="w-full h-20 object-contain mb-4"
-          />
+          <Image src={company.image}
+             className="w-full h-20 object-contain mb-4"
+            property='true'
+            alt={`${company.name} Logo`} />
           <h3 className="text-lg font-semibold">{company.name}</h3>
           <h3 className="text-lg font-semibold">{company.name}</h3>
         </div>
