@@ -28,7 +28,7 @@ export default function RootLayout({
         <title></title>
         <meta name="description" content="Development Teams for all your need." />
       </Head>
-      <body >
+      <body className='max-h-min overscroll-none'>
         <Navbar />
         <div>
           {children}
