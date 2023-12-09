@@ -25,7 +25,7 @@ const TechStack = () => {
       <h2 className="text-2xl text-center font-bold mb-4">
         We work with some pretty amazing tools
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         {techStackItems.map((item, index) => (
           <div key={index} className="group overflow-hidden flex justify-center items-center">
             <Image

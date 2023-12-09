@@ -70,7 +70,7 @@ const Contacts: React.FC = () => {
     };
 
     return (
-        <div className=" text-center  md:text-center p-6 ">
+        <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-center  md:text-center p-6 ">
             <h2 className="text-l md:text-2xl font-bold my-4">Contact Us</h2>
             <form onSubmit={handleSubmit}>
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:min-h-screen lg:min-h-screen ">
@@ -82,46 +82,46 @@ const Contacts: React.FC = () => {
                                 Achieve all your goals and get long-term value for your business with professional services from our highly qualified experienced developers and designers.</p>
                         </div>
                         <div className='mt-8 p-2'>
-                            <div className="mb-4">
+                            <div className="mb-4 mb-6">
                                 <input
-                                    className="border border-gray-800 rounded w-full mb-2 py-2 px-3 text-black-700 placeholder-gray-800"
+                                    className="border border-gray-800 rounded w-full mb-2 py-2 px-3 "
                                     type="text"
                                     name="name"
-                                    placeholder="Name:"
+                                    placeholder="Name"
                                     value={formData.name}
                                     onChange={handleChange}
                                     required
                                 />
                                 <input
-                                    className="border border-gray-800 rounded w-full mb-2 py-2 px-3 text-black-700 placeholder-gray-800"
+                                    className="border border-gray-800 rounded w-full mb-2 py-2 px-3 "
                                     type="email"
                                     name="email"
-                                    placeholder="Email:"
+                                    placeholder="Email"
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
                                 />
                                 <input
-                                    className="border border-gray-800 rounded w-full mb-2 py-2 px-3 text-black-700 placeholder-gray-800"
+                                    className="border border-gray-800 rounded w-full mb-2 py-2 px-3 "
                                     type="tel"
                                     name="phone"
-                                    placeholder="Phone:"
+                                    placeholder="Phone"
                                     value={formData.phone}
                                     onChange={handleChange}
                                     required
                                 />
                                 <input
-                                    className="border border-gray-800 rounded w-full mb-2 py-2 px-3 text-black-700 placeholder-gray-800"
+                                    className="border border-gray-800 rounded w-full mb-2 py-2 px-3 "
                                     type="text"
                                     name="source"
-                                    placeholder="Where did you hear about us? (optional):"
+                                    placeholder="Where did you hear about us? (optional)"
                                     value={formData.source}
                                     onChange={handleChange}
                                 />
                                 <textarea
-                                    className="border border-gray-800 rounded w-full mb-2 py-2 px-3 text-black-700 placeholder-gray-800"
+                                    className="border h-16 border-gray-800 rounded w-full mb-2 py-2 px-3 "
                                     name="projectOrProblem"
-                                    placeholder='Tell us about your project or problem:'
+                                    placeholder='Tell us about your project or problem'
                                     value={formData.projectOrProblem}
                                     onChange={handleChange}
                                     required
@@ -129,8 +129,8 @@ const Contacts: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col'>
-                        <div className='text-l md:text-2xl font-bold my-4'>What services are you interested in?*</div>
+                    <div className='flex flex-col '>
+                        <div className='text-l md:text-2xl font-bold  my-4'>What services are you interested in?</div>
                         <Checkbox
                             label="Web Development"
                             isChecked={services.webDevelopment}

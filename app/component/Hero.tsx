@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Image from 'next/image';
 const HeroSection = () => {
   return (
@@ -24,10 +24,10 @@ const HeroSection = () => {
           <Image src='/web_development_banner.svg'
             className="top-0 left-0 w-full h-full"
             priority
-            alt="Screenshots of the dashboard project showing desktop version" 
+            alt="Screenshots of the dashboard project showing desktop version"
             width={1000}
-            height={760} 
-            />
+            height={760}
+          />
         </div>
       </div>
     </section>

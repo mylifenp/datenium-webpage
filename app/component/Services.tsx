@@ -33,7 +33,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="bg-white dark:bg-gray-900 text-center text-white md:text-center p-6 ">
+    <div id='our-services' className="bg-white dark:bg-gray-900 text-center text-white md:text-center p-6 ">
       <h2 className="text-l md:text-2xl font-bold my-4">Our Services</h2>
       <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 md:min-h-screen lg:min-h-screen ">
         {services.map((service, index) => (
