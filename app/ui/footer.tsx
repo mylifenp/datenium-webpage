@@ -15,7 +15,7 @@ const Footer = () => {
             </a>
             {/* <span className="self-center whitespace-nowrap dark:text-white">- where innovation meets intelligence.</span> */}
             <p className='flex items-center my-3'>
-              Join us on a journey where data isn't just information – it's the foundation for unparalleled success.
+              Join us on a journey where data isn`&apros;`t just information – it`&apros;`s the foundation for unparalleled success.
             </p>
           </div>
 
