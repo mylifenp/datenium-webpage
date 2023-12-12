@@ -13,8 +13,8 @@ import Head from 'next/head';
 // export const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'NavyaNirmata.io - Creator of the Modern and Innovative Solutions',
-  description: 'NavyaNirmata.io is your dedicated partner for comprehensive development solutions. With a focus on excellence and innovation, we bring together skilled development teams tailored to meet your unique needs. Whether you\'re embarking on a software project, building a digital presence, or enhancing your technological capabilities, NavyaNirmata.io delivers top-notch expertise. Our commitment to quality and efficiency ensures that your vision transforms into reality. Explore the limitless possibilities with NavyaNirmata.io – where development meets ingenuity for all your requirements.',
+  title: 'Daterium - where innovation meets intelligence.',
+  description: 'Daterium is your dedicated partner for comprehensive development solutions. With a focus on excellence and innovation, we bring together skilled development teams tailored to meet your unique needs. Whether you\'re embarking on a software project, building a digital presence, or enhancing your technological capabilities, NavyaNirmata.io delivers top-notch expertise. Our commitment to quality and efficiency ensures that your vision transforms into reality. Explore the limitless possibilities with NavyaNirmata.io – where development meets ingenuity for all your requirements.',
 }
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth'}}>
     <Head>
         <title></title>
-        <meta name="description" content="Development Teams for all your need." />
+        <meta name="description" content="Daterium, where innovation meets intelligence." />
       </Head>
       <body className='max-h-min overscroll-none'>
         <Navbar />

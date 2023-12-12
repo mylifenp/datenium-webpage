@@ -3,31 +3,32 @@ import React from 'react';
 import Image from 'next/image';
 const services = [
   {
-    "title": "Business Applications",
-    "description": "Enhance your business operations with customized software solutions. Streamline processes, improve efficiency, and achieve your business goals.",
+    "category": "AI/ML Consulting",
+    "description": "Empower businesses to harness the transformative potential of Artificial Intelligence and Machine Learning. Tailored solutions range from developing cutting-edge algorithms to implementing AI-driven strategies for enhanced efficiency and decision-making."
+  }, 
+  {
+    "category": "Mobile/Web Development",
+    "description": "Focus on creating responsive, intuitive, and feature-rich applications. From native mobile apps to cross-platform solutions and responsive web designs, development services cater to diverse platforms and user preferences. Ensure seamless and engaging user experiences with efficient performance."
   },
   {
-    "title": "E-commerce Solution",
-    "description": "Elevate your online presence and boost sales with comprehensive e-commerce solutions. From user-friendly interfaces to secure payment gateways, we provide everything you need to succeed in the digital marketplace.",
+    "category": "Cloud & DevOps",
+    "description": "Embrace the power of the cloud and optimize development processes with services covering cloud migration, DevOps practices implementation, and ensuring continuous integration and delivery. Enable organizations to achieve agility, scalability, and reliability."
   },
   {
-    "title": "Web & Mobile Solution",
-    "description": "Stay ahead in the digital landscape with cutting-edge web and mobile solutions. Whether it's a responsive website or a feature-rich mobile app, we deliver solutions that cater to the evolving needs of your audience.",
+    "category": "Data Science",
+    "description": "Unlock hidden insights within data through data science expertise. Services encompass data analysis, predictive modeling, and machine learning to extract valuable information for strategic decision-making. Transform data into a powerful asset for businesses."
   },
   {
-    "title": "Digital Marketing",
-    "description": "Drive brand awareness and engagement through strategic digital marketing services. From social media campaigns to email marketing, we help you connect with your target audience and maximize your online presence.",
+    "category": "Software Engineering",
+    "description": "Deliver high-quality, scalable, and robust solutions in the realm of Software Engineering. Expertise includes full-stack development, software architecture, and application optimization. Ensure software aligns with business objectives and exceeds industry standards."
   },
-  {
-    "title": "Search Engine Optimization (SEO)",
-    "description": "Boost your website's visibility and rankings on search engines with our SEO services. Increase organic traffic, improve search engine rankings, and enhance your online presence to reach a wider audience.",
 
-  },
   {
-    "title": "Graphics Designing",
-    "description": "Make a lasting impression with visually appealing graphics. Our design team creates stunning visuals that resonate with your brand, from logos and marketing collateral to website and social media graphics.",
-  }
+    "category": "Digital Solutions",
+    "description": "Revolutionize your digital landscape with comprehensive solutions, specializing in seamless user experiences, scalable applications, and innovative digital strategies. Services cover web and mobile development, as well as immersive technologies."
+  },
 ]
+
 
 
 
@@ -38,8 +39,8 @@ const Services = () => {
       <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 md:min-h-screen lg:min-h-screen ">
         {services.map((service, index) => (
           <div key={index}>
-            <div className="text-stone-800 h-full max-w-full rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-lg shadow-cyan-500/50 p-4">
-              <h2 className="text-left text-white uppercase font-bold text-lg md:text-l">{service.title}</h2>
+            <div className="text-black h-full max-w-full rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-lg shadow-cyan-500/50 p-4">
+              <h2 className="text-left text-white uppercase font-bold text-lg md:text-l">{service.category}</h2>
               <p className="text-left h-full max-w-full whitespace-no-wrap my-2 md:my-5">{service.description}</p>
             </div>
           </div>

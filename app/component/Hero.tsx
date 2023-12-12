@@ -8,10 +8,9 @@ const HeroSection = () => {
         <div className="flex flex-col">
           <div className="text-left p-2 ">
             <h1 className="text-2xl md:text-xl lg:text-2xl xl:text-6xl font-bold mb-6">
-              NavyaNirmata.io: Pioneering Modern Solutions with Creativity and Precision.
+            <strong>Daterium</strong> - where innovation meets intelligence.
             </h1>
-            <p className="text-base md:text-md lg:text-lg xl:text-xl ">
-              NavyaNirmata.io is your dedicated partner for comprehensive development solutions. With a focus on excellence and innovation, we bring together skilled development teams tailored to meet your unique needs. Whether you&apos;re embarking on a software project, building a digital presence, or enhancing your technological capabilities, NavyaNirmata.io delivers top-notch expertise. Our commitment to quality and efficiency ensures that your vision transforms into reality. Explore the limitless possibilities with NavyaNirmata.io – where development meets ingenuity for all your requirements.</p>
+            <p>At Daterium, we are driven by a passion for leveraging cutting-edge artificial intelligence to transform industries. Our expert team specializes in crafting data-driven solutions that propel businesses into the future. From insightful consulting to digital mastery, cloud and DevOps excellence, and robust software engineering, we are your strategic partner in navigating the evolving landscape of technology.</p>
             <div className="mt-10 flex items-center justify-center md:justify-start gap-x-6">
               <a href="#" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
               <a href="#" className="text-sm md:text-base lg:text-lg xl:text-xl font-semibold leading-6">Learn more <span aria-hidden="true">→</span></a>

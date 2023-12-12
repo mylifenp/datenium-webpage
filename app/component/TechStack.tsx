@@ -23,7 +23,7 @@ const TechStack = () => {
   return (
     <div className="my-8 px-6">
       <h2 className="text-2xl text-center font-bold mb-4">
-        We work with some pretty amazing tools
+        We work with some pretty amazing technologies and platforms
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         {techStackItems.map((item, index) => (

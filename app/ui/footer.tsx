@@ -11,12 +11,12 @@ const Footer = () => {
         <div className="md:flex md:justify-between text-white">
           <div className="mb-6 md:mb-0 md:w-1/3">
             <a href="/" className="flex items-center ">
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">NavyaNirmata.io</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Daterium</span>
             </a>
-            <span className="self-center whitespace-nowrap dark:text-white">Pioneering Modern Solutions with Creativity and Innovations</span>
+            {/* <span className="self-center whitespace-nowrap dark:text-white">- where innovation meets intelligence.</span> */}
             <p className='flex items-center my-3'>
-              Our commitment to excellence, coupled with a passion for innovation, ensures that your projects are not just delivered but crafted with precision and creativity. 
-              Embrace a journey of collaboration and growth as NavyaNirmata.io becomes your go-to partner for all-encompassing development solutions.</p>
+              Join us on a journey where data isn't just information – it's the foundation for unparalleled success.
+            </p>
           </div>
 
           <div className=" grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -64,7 +64,7 @@ const Footer = () => {
         <hr className="my-6 dark:border-black-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © {currentYear} <a href="/" className="hover:underline">DigiWeb Technology</a>. All Rights Reserved.
+            © {currentYear} <a href="/" className="hover:underline">Daterium</a>. All Rights Reserved.
           </span>
 
 
