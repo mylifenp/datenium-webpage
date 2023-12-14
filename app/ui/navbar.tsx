@@ -8,10 +8,12 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+    document.body.classList.add('overflow-hidden');
   };
 
   const closeMenu = () => {
     setMenuOpen(false);
+    document.body.classList.remove('overflow-hidden');
   };
 
   return (
@@ -19,7 +21,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <span className="font-bold text-xl lg:text-2xl 2xl:text-3xl">Daterium</span>
+          <span className="font-bold text-xl lg:text-2xl 2xl:text-3xl">Datenium</span>
 
         </Link>
 
