@@ -70,15 +70,15 @@ const Contacts: React.FC = () => {
     };
 
     return (
-        <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-center  md:text-center p-6 ">
+        <div className="text-center  md:text-center p-6 ">
             <h2 className="text-l md:text-2xl font-bold my-4">Contact Us</h2>
             <form onSubmit={handleSubmit}>
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:min-h-screen lg:min-h-screen ">
                     <div className="flex flex-col">
                         <div className="text-left p-2 ">
-                            <h1 className="text-2xl md:text-xl lg:text-2xl xl:text-6xl font-bold mb-6">
+                            <h1 className="text-l md:text-xl lg:text-2xl xl:text-3xl font-bold mb-6">
                                 We would love to serve you with our development skills tailored to the high-quality standards of your company.</h1>
-                            <p className="text-base">
+                            <p className="text-base text-xl">
                                 Achieve all your goals and get long-term value for your business with professional services from our highly qualified experienced developers and designers.</p>
                         </div>
                         <div className='mt-8 p-2'>
@@ -119,7 +119,7 @@ const Contacts: React.FC = () => {
                                     onChange={handleChange}
                                 />
                                 <textarea
-                                    className="border h-16 border-gray-800 rounded w-full mb-2 py-2 px-3 "
+                                    className="border h-36 border-gray-800 rounded w-full mb-2 py-2 px-3 "
                                     name="projectOrProblem"
                                     placeholder='Tell us about your project or problem'
                                     value={formData.projectOrProblem}
@@ -130,7 +130,8 @@ const Contacts: React.FC = () => {
                         </div>
                     </div>
                     <div className='flex flex-col '>
-                        <div className='text-l md:text-2xl font-bold  my-4'>What services are you interested in?</div>
+                        <div className='md:text-2xl font-bold my-4'>What services are you interested in?</div>
+                        <div className='md:text-2xl my-4'>
                         <Checkbox
                             label="Web Development"
                             isChecked={services.webDevelopment}
@@ -180,6 +181,8 @@ const Contacts: React.FC = () => {
                             isChecked={services.others}
                             onChange={() => handleCheckboxChange('others')}
                         />
+                        </div>
+                        
                         <div className="flex justify-between">
                             <button
                                 className="bg-blue-500 hover:bg-blue-700 text-white  mb-2 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"

@@ -36,12 +36,12 @@ const Services = () => {
   return (
     <div id='our-services' className="bg-white dark:bg-gray-900 text-center text-white md:text-center p-6 ">
       <h2 className="text-l md:text-2xl font-bold my-4">Our Services</h2>
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 md:min-h-screen lg:min-h-screen ">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 ">
         {services.map((service, index) => (
           <div key={index}>
-            <div className="text-black h-full max-w-full rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-lg shadow-cyan-500/50 p-4">
-              <h2 className="text-left text-white uppercase font-bold text-lg md:text-l">{service.category}</h2>
-              <p className="text-left h-full max-w-full whitespace-no-wrap my-2 md:my-5">{service.description}</p>
+            <div className="text-black md:h-full max-w-full rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-lg shadow-cyan-500/50 p-4">
+              <h2 className="text-left text-white uppercase font-bold text-lg md:text-l  lg:text-xl xl:text-2xl">{service.category}</h2>
+              <p className="text-left h-full max-w-full whitespace-no-wrap my-2 md:my-5 lg:text-xl xl:text-2xl">{service.description}</p>
             </div>
           </div>
         ))}
