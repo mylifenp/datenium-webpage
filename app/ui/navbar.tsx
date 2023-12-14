@@ -1,8 +1,8 @@
 // components/Navbar.js
-"use client"
-import { FiMenu, FiX } from 'react-icons/fi';
-import { useState } from 'react';
-import Link from 'next/link';
+"use client";
+import { FiMenu, FiX } from "react-icons/fi";
+import { useState } from "react";
+import Link from "next/link";
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -20,11 +20,15 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/">
           <span className="font-bold text-xl lg:text-2xl 2xl:text-3xl">Daterium</span>
+
         </Link>
 
         {/* Mobile Menu Button */}
         <div className="block lg:hidden">
-          <button className="text-white focus:outline-none" onClick={toggleMenu}>
+          <button
+            className="text-white focus:outline-none"
+            onClick={toggleMenu}
+          >
             <FiMenu size={24} />
           </button>
         </div>
@@ -64,7 +68,6 @@ const Navbar = () => {
           <Link href="/contacts">Contacts
           </Link>
         </div>
-
       </div>
     </nav>
   );
