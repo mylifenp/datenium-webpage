@@ -49,6 +49,9 @@ const Navbar = () => {
                 <li className='md:text-2xl lg:text-3xl xxl:text-5xl'>
                   <Link href="/about" onClick={closeMenu}>About</Link>
                 </li>
+                <li className='md:text-2xl lg:text-3xl xxl:text-5xl'>
+                  <Link href="/blog" onClick={closeMenu}>Blogs</Link>
+                </li>
                 {/* <li>
                   <Link href="/services" onClick={closeMenu}>Services
                   </Link>
@@ -64,6 +67,8 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-4 text-xl lg:text-xl 2xl:text-2xl">
           <Link href="/about">About
+          </Link>
+          <Link href="/blog">Blogs
           </Link>
           {/* <Link href="/services">Services
           </Link> */}

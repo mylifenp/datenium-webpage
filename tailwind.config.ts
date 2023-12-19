@@ -16,6 +16,10 @@ const config: Config = {
         '2xl': '6rem',
       },
     },
+    plugins: [
+      require('@tailwindcss/typography'),
+   
+    ],
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

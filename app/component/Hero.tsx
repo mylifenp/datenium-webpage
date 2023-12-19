@@ -3,7 +3,7 @@ import React, { MouseEvent } from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4">
       <span className=" flex flex-col items-center justify-center  mx-auto">
         <h2 className="font-bold text-center text-3xl lg:text-3xl xl:text-5xl text-transparent text-transparent text-transparent bg-gradient-radial from-[rgba(2,0,36,1)] via-[rgba(121,9,86,1)] to-[rgba(0,212,255,1)] bg-clip-text">Unleashing Future Data, Today.</h2>
         <div className="p-4 text-center text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold">
