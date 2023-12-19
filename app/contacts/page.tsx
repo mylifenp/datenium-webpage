@@ -70,7 +70,7 @@ const Contacts: React.FC = () => {
     };
 
     return (
-        <div className="text-center  md:text-center p-6 ">
+        <div className="text-center  md:text-center p-6  bg-gradient-to-r from-blue-500 to-transparent">
             <h2 className="text-l md:text-2xl font-bold my-4">Contact Us</h2>
             <form onSubmit={handleSubmit}>
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:min-h-screen lg:min-h-screen ">
