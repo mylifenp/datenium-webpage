@@ -23,7 +23,7 @@ const getPostMetadata = () => {
     return posts
 }
 
-export const Blog = () => {
+export const BlogPage = () => {
     const postMetadata = getPostMetadata();
     const postPreviews = postMetadata.map((post) => (
         <article key={post.slug} className="flex bg-white p-4 border border-gray-300 rounded-md shadow-md border-violet-600 m-2">
@@ -45,4 +45,4 @@ export const Blog = () => {
     )
 }
 
-export default Blog
+export default BlogPage
