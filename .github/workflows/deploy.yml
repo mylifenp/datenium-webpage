@@ -34,7 +34,7 @@ jobs:
           name: mylifenp/datenium-webpage
           registry: ghcr.io
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets. GITHUB_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           dockerfile: Dockerfile
           buildargs: NEXT_PUBLIC_BACKEND_URL,NEXT_PUBLIC_META_API_KEY
           tags: latest
@@ -43,7 +43,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.0
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
-          GITHUB_TOKEN: ${{ secrets. GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           port: ${{ secrets.DEPLOY_PORT }}
