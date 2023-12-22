@@ -31,7 +31,7 @@ jobs:
           NEXT_PUBLIC_BACKEND_URL: ${{ secrets.APP_NEXT_PUBLIC_BACKEND_URL }}
           NEXT_PUBLIC_META_API_KEY: ${{ secrets.APP_NEXT_PUBLIC_META_API_KEY }}
         with:
-          name: bikash-jaiswal/Datenium
+          name: mylifenp/datenium-webpage
           registry: ghcr.io
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets. GITHUB_TOKEN }}
@@ -52,7 +52,7 @@ jobs:
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
             docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
-            docker pull ghcr.io/bikash-jaiswal/Datenium:latest
+            docker pull ghcr.io/mylifenp/datenium-webpage:latest
             docker stop datenium-hp
             docker system prune -f
-            docker run --name datenium-hp -dit -p 3000:3000 ghcr.io/bikash-jaiswal/Datenium:latest
+            docker run --name datenium-hp -dit -p 3000:3000 ghcr.io/mylifenp/datenium-webpage:latest
