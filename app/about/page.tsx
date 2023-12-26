@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-transparent">
+    <div className="bg-gray-900">
       <div className="container mx-auto p-8 ">
         <Head>
           <title>About Us | Datenium</title>

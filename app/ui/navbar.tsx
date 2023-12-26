@@ -17,11 +17,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" text-white bg-gray-800 p-4 ">
+    <nav className=" p-4 ">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <span className="font-bold text-xl lg:text-2xl 2xl:text-3xl">Datenium</span>
+          <span className="text-l lg:text-xl 2xl:text-2xl">Datenium</span>
 
         </Link>
 
@@ -50,7 +50,7 @@ const Navbar = () => {
                   <Link href="/about" onClick={closeMenu}>About</Link>
                 </li>
                 <li className='md:text-2xl lg:text-3xl xxl:text-5xl'>
-                  <Link href="/blog" onClick={closeMenu}>Blogs</Link>
+                  <Link href="/blogs" onClick={closeMenu}>Blogs</Link>
                 </li>
                 {/* <li>
                   <Link href="/services" onClick={closeMenu}>Services
@@ -65,10 +65,10 @@ const Navbar = () => {
         )}
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex space-x-4 text-xl lg:text-xl 2xl:text-2xl">
+        <div className="hidden lg:flex space-x-4 text-xl ">
           <Link href="/about">About
           </Link>
-          <Link href="/blog">Blogs
+          <Link href="/blogs">Blogs
           </Link>
           {/* <Link href="/services">Services
           </Link> */}

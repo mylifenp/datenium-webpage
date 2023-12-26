@@ -16,7 +16,7 @@ const industriesData = [
 
 const IndustryGrid = () => {
     return (
-        <div className='bg-white dark:bg-gray-700 text-white p-6'>
+        <div className='text-white p-6'>
             <h2 className="text-2xl text-center font-bold mb-4">
                 Developing software solutions for a broad spectrum of industries.
             </h2>

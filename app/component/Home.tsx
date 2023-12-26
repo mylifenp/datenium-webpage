@@ -13,7 +13,7 @@ const HomePage = () => {
       <Services />
       <TechStack/>
       <IndustryGrid />
-      <ContactForm/>
+      {/* <ContactForm/> */}
       {/* <Contacts /> */}
     </div>
   );

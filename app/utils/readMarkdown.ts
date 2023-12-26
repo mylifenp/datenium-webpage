@@ -15,7 +15,7 @@ interface SinglePost {
   content: string;
 }
 
-const postsDirectory = path.join(process.cwd(), 'app/blog/posts');
+const postsDirectory = path.join(process.cwd(), 'app/blogs/posts');
 
 export function parseMarkdownFile(fileName: string): SinglePost  {
   const fullPath = path.join(postsDirectory, fileName+ '.md');

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import Navbar from "./ui/navbar";
 import Footer from "./ui/footer";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Datenium - where innovation meets intelligence.",
@@ -21,10 +20,16 @@ export default function RootLayout({
       className="scroll-smooth "
       style={{ scrollBehavior: "smooth" }}
     >
-      <body className="max-h-min bg-cover bg-center overscroll-none bg-[url('/everest-grey.jpg')] bg-no-repeat bg-fixed bg-gray-300 ">
-        <Navbar />
-        <div>{children}</div>
-        <Footer />
+      <body className="flex flex-col md:flex-row bg-neutral-800">
+        <aside className="flex-none w-2/12">{/* Sidebar content */}</aside>
+        <main className="flex-grow ">
+          <Navbar />
+          <div>{children}</div>
+          <Footer />
+        </main>
+        <aside className="flex-none w-2/12">
+          {/* Another sidebar content */}
+        </aside>
       </body>
     </html>
   );

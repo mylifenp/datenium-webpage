@@ -6,16 +6,15 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-white dark:bg-gray-700">
+    <footer>
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between text-white">
+        {/* <div className="md:flex md:justify-between text-white">
           <div className="mb-6 md:mb-0 md:w-1/3">
             <a href="/" className="flex items-center ">
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Datenium
               </span>
             </a>
-            {/* <span className="self-center whitespace-nowrap dark:text-white">- where innovation meets intelligence.</span> */}
             <p className="flex items-center my-3">
               Join us on a journey where data isn&apos;t just information –
               it&apos;s the foundation for unparalleled success.
@@ -86,7 +85,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 dark:border-black-700 lg:my-8" />
+        <hr className="my-6 dark:border-black-700 lg:my-8" /> */}
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © {currentYear}{" "}
