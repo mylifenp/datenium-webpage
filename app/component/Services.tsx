@@ -19,26 +19,19 @@ const servicesData = [
     "uid":'3',
     "category": "Cloud & DevOps",
     "description": "Embrace the power of the cloud and optimize development processes with services covering cloud migration, DevOps practices implementation, and ensuring continuous integration and delivery. Enable organizations to achieve agility, scalability, and reliability.",
- "image":"/Canada-flags.svg"
+ "image":"/cloud-devops.webp"
   },
   {
     "uid":'4',
     "category": "Data Science",
     "description": "Unlock hidden insights within data through data science expertise. Services encompass data analysis, predictive modeling, and machine learning to extract valuable information for strategic decision-making. Transform data into a powerful asset for businesses.",
-   "image":"/Canada-flags.svg"
+   "image":"/data-science.webp"
   },
   {
      "uid":'5',
     "category": "Software Engineering",
     "description": "Deliver high-quality, scalable, and robust solutions in the realm of Software Engineering. Expertise includes full-stack development, software architecture, and application optimization. Ensure software aligns with business objectives and exceeds industry standards.",
-  "image":"/Canada-flags.svg"
-  },
-
-  {
-    "uid":'6',
-    "category": "Digital Solutions",
-    "description": "Revolutionize your digital landscape with comprehensive solutions, specializing in seamless user experiences, scalable applications, and innovative digital strategies. Services cover web and mobile development, as well as immersive technologies.",
-    "image":"/Canada-flags.svg"
+  "image":"/software-development.webp"
   },
 ]
 
