@@ -59,6 +59,9 @@ const Navbar = () => {
                 <li>
                   <Link href="/contacts" onClick={closeMenu}>Contacts</Link>
                 </li>
+                <li>
+                  <Link href="/signup" onClick={closeMenu}> <button  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> SIGNUP</button> </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -74,6 +77,7 @@ const Navbar = () => {
           </Link> */}
           <Link href="/contacts">Contacts
           </Link>
+          <Link href="/signup" onClick={closeMenu}> <button  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> SIGNUP</button> </Link>
         </div>
       </div>
     </nav>
