@@ -20,14 +20,12 @@ export default function RootLayout({
       className="scroll-smooth "
       style={{ scrollBehavior: "smooth" }}
     >
-      <body className="flex flex-col md:flex-row bg-neutral-800">
-        {/* <aside className="flex-none w-2/12"></aside> */}
+      <body className="flex flex-col md:flex-row ">
         <main className="flex-grow ">
           <Navbar />
           <div>{children}</div>
           <Footer />
         </main>
-        {/* <aside className="flex-none w-2/12"></aside> */}
       </body>
     </html>
   );

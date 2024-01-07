@@ -1,96 +1,137 @@
-// ServiceCard.js
-import React from 'react';
-import Image from 'next/image';
-const servicesData = [
-  {
-    "uid":'1',
-    "category": "AI/ML Consulting",
-    "description": "Empower businesses to harness the transformative potential of Artificial Intelligence and Machine Learning. Tailored solutions range from developing cutting-edge algorithms to implementing AI-driven strategies for enhanced efficiency and decision-making.",
-    "image":"/multimodal-ai3.jpg"
-  }, 
-  {
-    "uid":'2',
-    "category": "Mobile/Web Development",
-    "description": "Focus on creating responsive, intuitive, and feature-rich applications. From native mobile apps to cross-platform solutions and responsive web designs, development services cater to diverse platforms and user preferences. Ensure seamless and engaging user experiences with efficient performance.",
-"image":"/mobile.webp"
-
-  },
-  {
-    "uid":'3',
-    "category": "Cloud & DevOps",
-    "description": "Embrace the power of the cloud and optimize development processes with services covering cloud migration, DevOps practices implementation, and ensuring continuous integration and delivery. Enable organizations to achieve agility, scalability, and reliability.",
- "image":"/cloud-devops.webp"
-  },
-  {
-    "uid":'4',
-    "category": "Data Science",
-    "description": "Unlock hidden insights within data through data science expertise. Services encompass data analysis, predictive modeling, and machine learning to extract valuable information for strategic decision-making. Transform data into a powerful asset for businesses.",
-   "image":"/data-science.webp"
-  },
-  {
-     "uid":'5',
-    "category": "Software Engineering",
-    "description": "Deliver high-quality, scalable, and robust solutions in the realm of Software Engineering. Expertise includes full-stack development, software architecture, and application optimization. Ensure software aligns with business objectives and exceeds industry standards.",
-  "image":"/software-development.webp"
-  },
-]
+import React, { ReactNode } from 'react';
 
 interface ServiceProps {
   uid: string;
   category: string;
-  description: string;
+  description: string | ReactNode;
   image: string;
 }
 
-const OurService: React.FC<ServiceProps> = ({  uid , category, description, image}) => {
-  const uuid = Number(uid)
-   const isEven = uuid % 2 === 0;
-  return (
-      <div className={`flex bg-white text-black  flex-row p-8 ${isEven ? 'flex-row' : 'flex-row-reverse'} `}>
-      {/* Left side: Image */}
-      <div className="basis-1/2 m-4">
-        <img src={image} alt={category} className="" />
-      </div>
+const servicesData = [
+  {
+    "uid":'1',
+    "category": "AI/ML Consulting",
+    "description": (
+      <>
+      <p></p>
+      <ul className="list-disc ml-6">
+        <li>Generative AI for innovative content creation.</li>
+        <li>Machine Learning, offering tailored solutions for various business challenges.</li>
+        <li>Deep Learning techniques for extracting valuable insights from large datasets.</li>
+      </ul>
+      </>
+    ),
+    "image":"/multimodal-ai3.jpg"
+  }, 
+  {
+    "uid":'2',
+    "category": "Web Development",
+    "description": (
+      <>
+      <p> We deliver high-quality, scalable, and secure website and web applications which is perfectly aligned with your business goals.</p>
+      <ul className="list-disc ml-6 p-3">
+        <li>Web development and design.</li>
+        <li>eCommerce website design.</li>
+        <li>Website audit and QA.</li>
+      </ul>
+      </>
+    ),"image":"/web-developer.jpg"
+   
+  },
+  {
+    "uid":'6',
+    "category": "Mobile App Development",
+    "description": (
+      <>
+      <p> Our experienced team of developers uses the latest technologies and best practices to create custom mobile apps that are user-friendly, efficient, and scalable.</p>
+      <ul className="list-disc ml-6 p-3">
+        <li>iOS App Development.</li>
+        <li>Android App Development</li>
+        <li> Cross-platform Development</li>
+      </ul>
+      </>
+    ),"image":"/mobile.webp"
+   
+  },
+  {
+    "uid":'3',
+    "category": "Cloud & DevOps",
+    "description": (
+      <>
+      <p> Expert DevOps services to help businesses optimize their software development processes and achieve better business outcomes. Continuous integration, delivery, deployment, and monitoring.</p>
+      <ul className="list-disc ml-6 p-3">
+        <li> CI/CD Pipeline.</li>
+        <li> Pilot Framework Creation.</li>
+        <li> Assessment and Planning.</li>
+      </ul>
+      </>
+    ),"image":"/cloud-devops.webp"
+  },
+  {
+    "uid":'4',
+    "category": "Data Science",
+    "description": (
+      <>
+        <p>Our experienced team of data analysts uses cutting-edge technologies and tools to collect, analyze, and interpret data, providing our clients with valuable insights that can help them improve their operations.</p>
+        <ul className="list-disc ml-6">      
+          <li>Data analytics consultation.</li>
+          <li> Data analytics implementation.</li>
+        </ul>
+      </>
+    ),"image":"/data-science.webp"
+  },
+  {
+     "uid":'5',
+    "category": "Software Engineering",
+    "description": (
+      <>
+        <p> We have over a decade of experience providing top-notch custom software development services for startups, mid-sized, and enterprise customers.</p>
+        Managed delivery model.
+        <ul className="list-disc ml-6 p-3">
+          <li>Managed delivery model.</li>
+          <li>Enterprise software development.</li>
+          <li>Startups Software Development (MVP).</li>
+        </ul>
+      </>
+    ),"image":"/software-development.webp"
+  },
+]
 
-      {/* Right side: Category and Description */}
-      <div className=" flex flex-col text-center justify-center basis-1/2 m-4 mx-auto bg-white text-black ">
-        <h2 className="text-center bg-white text-black text-lg md:text-l lg:text-xl xl:text-2xl">{category}</h2>
-        <p className="text-left bg-white text-black  whitespace-no-wrap my-2  ">{description}</p>
+
+const OurService: React.FC<ServiceProps> = ({ uid, category, description, image }) => {
+  const uuid = Number(uid);
+  const isEven = uuid % 2 === 0;
+
+  return (
+    <div className="flex bg-white text-black flex-col md:flex-row items-center shadow-inner hover:shadow-lg ">
+      <div className= "order-1 md:w-1/2 m-4 ">
+        <img src={image} alt={category} className="w-full h-auto md:max-w-full mx-auto" />
+      </div>
+      <div className="flex flex-col text-center justify-center md:w-1/2 m-4 bg-white text-black">
+        <h2 className="text-center bg-white text-black text-lg md:text-l lg:text-xl xl:text-2xl">
+          {category}
+        </h2>
+        <div className="text-left bg-white text-black whitespace-no-wrap my-2">
+          {description}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ServiceCard = () => {
+  return (
+    <div className='mx-auto max-w-screen-2xl px-4 my-16 sm:px-6 lg:px-8'>
+      <h2 className="text-3xl font-bold mb-4 text-center">Our Services</h2>
+      <div className='grid grid-cols-1 lg:h-screen lg:grid-cols-2 lg:gap-8 my-16 '>
+        {servicesData.map((service, index) => (
+          <OurService key={index} {...service} />
+        ))}
       </div>
     </div>
   );
 };
 
 
-
-
-
-
-const ServiceCard = () => {
-  return (
-    // <div id='our-services' className="bg-white dark:bg-gray-900 text-center text-white md:text-center p-6 ">
-    //   <h2 className="text-l md:text-2xl font-bold my-4">Our Services</h2>
-    //   <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 ">
-    //     {services.map((service, index) => (
-    //       <div key={index}>
-    //         <div className="text-black md:h-full max-w-full rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-lg shadow-cyan-500/50 p-4">
-    //           <h2 className="text-left text-white uppercase font-bold text-lg md:text-l  lg:text-xl xl:text-2xl">{service.category}</h2>
-    //           <p className="text-left h-full max-w-full whitespace-no-wrap my-2 md:my-5 lg:text-xl xl:text-2xl">{service.description}</p>
-    //         </div>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
-    <div>
-    <h2 className="block text-l bg-white text-black md:text-2xl font-bold my-4 text-center">Our Services</h2>
-
-      {servicesData.map((service, index) => (
-        <OurService key={index} {...service} />
-      ))}
-    </div>
-  )
-}
-
-
-
 export default ServiceCard;
+

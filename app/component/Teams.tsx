@@ -6,14 +6,7 @@ const teamsData = [
       name: 'Bikash',
       role: 'Python/AI Expert',
       imageUrl: 'https://avatars.githubusercontent.com/u/11890268?v=4',
-    },
-    
-    {
-      name: 'Amit Shah',
-      role: 'Full Stack Expert',
-      imageUrl: 'https://avatars.githubusercontent.com/u/1016541?v=4',
-    },
-
+    }
 ];
 
 interface PeopleCardProps {
